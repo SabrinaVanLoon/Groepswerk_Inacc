@@ -1,0 +1,39 @@
+.nav-item { 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: medium;
+    font-weight: bold;
+   padding-right: 150px;
+}
+
+.navbar-brand{
+    padding-right: 110px;
+}
+
+.page-footer, .text-uppercase { 
+    background-color: grey;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 11px;
+
+}
+
+body {
+   background-color: white;
+   color: darkgrey;
+}
+
+.lead {
+    padding-top: 50px;
+    padding-left: 80px;
+}
+
+.figure1, .figure2, .figure3 {
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.beschrijving1, .beschrijving2, .beschrijving3{
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
