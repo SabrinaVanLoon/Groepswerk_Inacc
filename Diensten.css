@@ -1,39 +1,64 @@
-.nav-item { 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: medium;
-    font-weight: bold;
-   padding-right: 150px;
-}
+* {box-sizing: border-box;}
+body {font-family: Georgia, 'Times New Roman', Times, serif;}
+section {padding: 60px 0; overflow: hidden;}
+.section-bg {background: linear-gradient(180deg, lightgrey 0%,  rgb(231, 228, 228) 100%);}
+.section-title {text-align: center; padding-bottom: 30px; }
+.section-title h2 {font-size: 32px; font-weight: 600; text-transform: uppercase; margin-bottom: 20px; padding-bottom: 20px; position: relative; font-family: Georgia, 'Times New Roman', Times, serif; color: black;}
+/*----- Header -----*/
 
-.navbar-brand{
-    padding-right: 110px;
-}
+#header {height: 90px; transition: all 0.5s; z-index: 997; transition: all 0.5s; padding: 16px 0; background: darkgrey;}
+#header .logo {font-size: 24px; margin: 0; padding: 10px 0; line-height: 1; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; font-family: Georgia, 'Times New Roman', Times, serif ;}
 
-.page-footer, .text-uppercase { 
-    background-color: grey;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 11px;
+/*----- navigatie -----*/
+.dropdown a:hover {background-color: silver;}
+.nav-link {color: whitesmoke; font-size: 18px;}
+.nav-menu a:hover {color: black;}
+.nav-item { font-family: Georgia, 'Times New Roman', Times, serif;}
 
-}
 
-body {
-   background-color: white;
-   color: darkgrey;
-}
 
-.lead {
-    padding-top: 50px;
-    padding-left: 80px;
-}
+/*----- hero -----*/
+#hero {width: 100%; padding: 0 0 0 0; background: url('../afbeeldingen/grey_background.jpg');}
+#hero h3, hr {margin: 0 0 15px 0; font-size: 20px; font-weight: 700; line-height: 56px; color: black; font-family: Arial, Helvetica, sans-serif}
+#hero p {color: black; margin-bottom: 30px; font-size: 20px;}
+  @media (max-width: 991px) {
+    #hero .hero-img {text-align: center;}
+    #hero .hero-img img {width: 50%;} }
+  @media (max-width: 768px) {
+    #hero {-moz-text-align-last: center; text-align-last: center;}
+    #hero h3 {font-size: 16px; line-height: 36px;}
+    #hero p {font-size: 14px; line-height: 24px; margin-bottom: 30px;}
+    #hero .hero-img img {width: 70%;} }
+  @media (max-width: 575px) {#hero .hero-img img {width: 80%;} }
 
-.figure1, .figure2, .figure3 {
-    padding-top: 30px;
-    padding-left: 100px;
-}
+/*----- diensten -----*/
+.diensten {padding-bottom: 10px;}
+.diensten .card {border: 0; padding: 0 30px; margin-bottom: 60px; position: relative; background: transparent;} 
+.diensten .card-img {width: calc(100% + 60px); margin-left: -30px; overflow: hidden; z-index: 9; border-radius: 0;} 
+.diensten .card-img img {max-width: 100%; transition: all 0.3s ease-in-out;}
+.diensten .card-body {z-index: 10; background: whitesmoke; border-top: 4px solid black; padding: 30px; box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); margin-top: -60px; transition: 0.3s;}
+.diensten .card-title {font-weight: 700; text-align: center; margin-bottom: 20px;} 
+.diensten .card-title a {color: black; transition: 0.3s;}
+.diensten .card-text {color: black;} 
+.diensten .read-more a {color: black; text-transform: uppercase; font-weight: 600; font-size: 12px; transition: 0.3s;} 
+.diensten .read-more a:hover {color: silver;} 
+.diensten .card:hover .card-body { border-color: silver;}
+.diensten .card:hover .card-body .card-title a {color: silver;}
 
-.beschrijving1, .beschrijving2, .beschrijving3{
-    padding-top: 30px;
-    padding-left: 80px;
-}
+/*----- team -----*/
+.team .member {text-align: center; margin-bottom: 20px;}
+.team .member .pic {margin-bottom: 15px; overflow: hidden; min-height: 260px;}
+.team .member .pic img {max-width: 100%; transition: all 0.3s ease-in-out;}
+.team .member h4 {font-weight: 700; margin-bottom: 2px; font-size: 18px; color: black;}
 
+/*----- formulier -----*/
+.contact .info-box {color: #444444; text-align: center; box-shadow: 0 0 40px rgb(178, 178, 179); padding: 20px 0 30px 0; background: whitesmoke;}
+.contact .info-box h3 {font-size: 23px; color: black; font-weight: 700; margin: 10px 0;}
+.contact .email-form button[type="submit"] {background: grey; padding: 10px 24px; color: whitesmoke; transition: 0.4s; border: 0;}
+.contact .email-form button[type="submit"]:hover {
+background: black;}
+
+/*----- footer -----*/
+.page-footer, .pagr-footer h5 {background-color: grey; color: whitesmoke; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 18px;}
+.copyright {color: black; font-size: 12px;}
+.page-footer {padding-bottom: 50px;}
